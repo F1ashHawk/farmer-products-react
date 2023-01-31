@@ -1,0 +1,66 @@
+.benefit-card--green {
+    background-color: #E1EDCE;
+    padding: 22px 20px 20px;
+    min-height: 197px;
+    width: 540px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.benefit-card--red {
+    background-color: #F8DDD7;
+    padding: 22px 20px 20px;
+    min-height: 197px;
+    width: 540px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.benefit-card__heading {
+    display: flex;
+    gap: 20px;
+}
+
+.benefit-card__title {
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+}
+
+.benefit-card__category--green {
+    display: block;
+    font-family: 'Inter','Arial', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    padding: 2px 10px;
+    background-color: #88AA4D;
+    color: #ffffff;
+}
+
+.benefit-card__category--red {
+    display: block;
+    font-family: 'Inter','Arial', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    padding: 2px 10px;
+    background-color: #F75531;
+    color: #ffffff;
+}
+
+.benefit-card__name {
+    font-family: 'Inter','Arial', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.benefit-card__text {
+    font-family: 'Inter','Arial', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+}
