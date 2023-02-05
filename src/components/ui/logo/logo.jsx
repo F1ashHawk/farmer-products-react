@@ -1,11 +1,12 @@
 import logo from "../../../assets/logo/logo.svg";
-import "./style.css";
+import {StyledLogo} from './styled';
 
-export default function Logo() {
+
+export default function Logo({className, link}) {
   return (
-    <a className="logo__link" href="/">
-      <img className="logo__img" src={logo} alt="" />
-      <span className="logo__title">Фермерские продукты</span>
-    </a>
+    <StyledLogo $className={className} href={link}>
+      <img src={logo} alt="" />
+      <span>Фермерские продукты</span>
+    </StyledLogo>
   );
 }

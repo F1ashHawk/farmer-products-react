@@ -1,18 +1,18 @@
-import "./style.css"
+import {CardHeading, CardName, CardText, CardTitle, CategoryRed, RedCard} from './styled'
 
 export default function BenefitCardRed({benefit}) {
     return (
-        <li className="benefit-card--red">
-            <div className="benefit-card__heading">
-                <img className="benefit-card__image" src={benefit.src} alt="#" ></img>
-                <div className="benefit-card__title">
-                    <span className="benefit-card__category--red">Фермерские продукты</span>
-                    <h5 className="benefit-card__name">{benefit.heading}</h5>
-                </div>
-            </div>
-            <div className="benefit-card__text">
-                <p>{benefit.text}</p>
-            </div>
-        </li>
+        <RedCard>
+            <CardHeading>
+                <img src={benefit.src} alt="#" />
+                <CardTitle>
+                    <CategoryRed>Магазинные продукты</CategoryRed>
+                    <CardName>{benefit.heading}</CardName>
+                </CardTitle>
+            </CardHeading>
+            <CardText>
+                {benefit.text}
+            </CardText>
+        </RedCard>
     )
 }

@@ -1,20 +1,20 @@
-import "./style.css";
+import {Intro, IntroHeading, IntroText, IntroTextBlock, IntroWrapper} from './styled';
 
 export default function MainIntro() {
   return (
-    <div className="intro">
-      <div className="intro__wrapper">
-        <div className="intro__text-block">
-          <h1 className="intro__heading">
+    <Intro>
+      <IntroWrapper>
+        <IntroTextBlock>
+          <IntroHeading>
             Магазин фермерских продуктов с доставкой
-          </h1>
-          <p className="intro__text">
+          </IntroHeading>
+          <IntroText>
             Все продукты изготавливаются под заказ. Фермеры начинают готовить
             продукты за день до отправки заказа клиентам. Именно поэтому мы
             принимаем заказы заранее и доставляем продукты максимально свежими.
-          </p>
-        </div>
-      </div>
-    </div>
+          </IntroText>
+        </IntroTextBlock>
+      </IntroWrapper>
+    </Intro>
   );
 }

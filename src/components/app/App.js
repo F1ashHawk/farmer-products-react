@@ -1,6 +1,11 @@
 import PageWrapper from "../layout/page-wrapper/page-wrapper";
-import "./style.css";
+import {GlobalStyle} from './styled';
 
 export default function App() {
-  return <PageWrapper />;
+  return (
+    <>
+      <GlobalStyle />
+      <PageWrapper />
+    </>
+  );
 }

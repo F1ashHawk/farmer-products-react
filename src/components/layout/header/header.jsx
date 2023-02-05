@@ -1,12 +1,12 @@
 import Button from "../../ui/button/button";
 import Logo from "../../ui/logo/logo";
-import "./style.css";
+import {StyledHeader} from './styled';
 
 export default function Header() {
   return (
-    <div className="header__wrapper">
+    <StyledHeader>
       <Logo />
-      <Button>Купить</Button>
-    </div>
+      <Button minWidth={260} link={"/buy"}>Купить</Button>
+    </StyledHeader>
   );
 }

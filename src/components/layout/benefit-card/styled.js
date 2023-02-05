@@ -1,4 +1,6 @@
-.benefit-card--green {
+import styled from 'styled-components';
+
+export const GreenCard = styled.li`
     background-color: #E1EDCE;
     padding: 22px 20px 20px;
     min-height: 197px;
@@ -6,9 +8,10 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-}
+    font-family: ${(props) => props.theme.fontFamily};
+`;
 
-.benefit-card--red {
+export const RedCard = styled.li`
     background-color: #F8DDD7;
     padding: 22px 20px 20px;
     min-height: 197px;
@@ -16,51 +19,48 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-}
+    font-family: ${(props) => props.theme.fontFamily};
+`;
 
-.benefit-card__heading {
+export const CardHeading = styled.div`
     display: flex;
     gap: 20px;
-}
+`;
 
-.benefit-card__title {
+export const CardTitle = styled.div`
     display: flex;
     gap: 4px;
     flex-direction: column;
-}
+`;
 
-.benefit-card__category--green {
+export const CategoryGreen = styled.span`
     display: block;
-    font-family: 'Inter','Arial', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 150%;
     padding: 2px 10px;
     background-color: #88AA4D;
     color: #ffffff;
-}
+`;
 
-.benefit-card__category--red {
+export const CategoryRed = styled.span`
     display: block;
-    font-family: 'Inter','Arial', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 150%;
     padding: 2px 10px;
     background-color: #F75531;
     color: #ffffff;
-}
+`;
 
-.benefit-card__name {
-    font-family: 'Inter','Arial', sans-serif;
+export const CardName = styled.h5`
     font-weight: 700;
     font-size: 18px;
     line-height: 150%;
-}
+`;
 
-.benefit-card__text {
-    font-family: 'Inter','Arial', sans-serif;
+export const CardText = styled.p`
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
-}
+`;

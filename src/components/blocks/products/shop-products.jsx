@@ -1,5 +1,5 @@
 import BenefitCardRed from '../../layout/benefit-card/benefit-card-red';
-import "./style.css";
+import {BenefitsList} from './styled';
 
 /**
  * @param {Array} benefits 
@@ -9,10 +9,10 @@ export default function ShopProducts({benefits}) {
     const curList = list.filter(item => item.group === 'shop');
 
     return (
-        <ul className="benefits__list">
+        <BenefitsList>
             {curList.map((benefit) => (
                 <BenefitCardRed benefit={benefit} key={benefit.id} />
             ))}
-        </ul>
+        </BenefitsList>
     )
 }
